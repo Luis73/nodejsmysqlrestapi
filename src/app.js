@@ -10,7 +10,7 @@ import indexRoutes from "./routes/index.routes.js";
 const app = express();
 
 // Middlewares
-app.use(morgan('combined'))
+app.use(morgan(':method :host :status :res[content-length] - :response-time ms'))
 app.use(express.json());
 
 // Routes
